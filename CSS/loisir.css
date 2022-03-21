@@ -1,0 +1,67 @@
+@keyframes cours {
+  0%   {background: url(../Images/anim1.png);}
+  50%  {background: url(../Images/anim2.png);}
+  75%  {background: url(../Images/anim3.png);}
+  100% {background: url(../Images/anim4.png);}
+}
+@keyframes mort {
+  0%   {background: url(../Images/mort1.png);}
+  50%  {background: url(../Images/mort2.png);}
+  90%  {background: url(../Images/mort3.png);}  
+}
+@keyframes avance{
+	from{
+		margin-left: 0%;
+		transform: rotate(10deg);
+	}
+	to{
+		margin-left: 90%;
+		transform: rotate(-10deg);
+	}
+}
+body{
+	background: url(../Images/fond.png);
+}
+
+
+form{/*animation pour avancer*/
+	display:block;		
+	width: 105px;
+	height: 117px;
+	animation-name: avance;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+form:active{/*pour arreter le perso*/
+	animation-play-state: paused;
+	transform: rotate(0deg);
+}
+.anim{/*pour maintenir la mort*/
+	display:block;
+	background: url(../Images/mort3.png);
+	width: 105px;
+	height: 117px;
+}
+
+.anim{	/*animation pour courir*/
+	display:block;		
+	width: 105px;
+	height: 117px;
+	animation-name: cours;
+	animation-timing-function: linear;
+	animation-duration: 0.4s;
+	
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+}
+
+.anim:active{	/*animation pour la mort*/	
+	animation-name: mort;
+	animation-duration: 1s;
+	transform: rotate(0deg);	
+	animation-iteration-count: 1;	
+}

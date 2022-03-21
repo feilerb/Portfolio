@@ -1,0 +1,146 @@
+
+body{
+	background: url(../Images/fond.png);
+}
+
+
+.menu{/*reglage de la barre de naviguation*/
+	margin-top: 10px;
+	background-color: #6d071a;
+	width: 100%;
+	height: 66px;
+	line-height: 66px;
+	position: fixed;
+	z-index: 1;
+}
+
+.m-left{/*reglage du prenom*/
+	float: left;
+	margin-left: 10px;
+	
+}
+
+.logo{/*reglage du prenom*/
+
+	margin: 10px;
+	padding: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 35px;
+	letter-spacing: 1px;
+}
+
+.m-right{/*reglage des liens*/
+	float: right;
+}
+
+.m-link a{/*reglage des liens*/
+	color: white;
+}
+a{
+	text-decoration: none !important;
+}
+.m-link{/*reglage d'un lien principal*/	
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0;margin: 0 10px;
+	padding-bottom: 3px;
+	border-radius: 2px;
+}
+.m-link ul{/*reglage des liens secondaires*/
+	list-style-type: none;
+	width: 150px;
+	background-color: #6d071a;
+	display: none;
+	margin-top: 50px;
+}
+.m-link ul li a{		
+	border-radius: 3px;
+}
+.m-link ul li a:hover{/*reglage d'un lien secondaire*/
+	color: black;
+	background-color: white;
+}
+.m-link:hover ul{/*reglage d'un lien secondaire*/
+	display: block;
+}
+.m-link:hover ul li{/*reglage d'un lien secondaire*/
+	float: none;
+
+}
+.m-link ul{/*reglage d'un lien secondaire*/
+	position: absolute;
+}
+
+
+/*--------------debut du hamburguer------------------*/
+.m-nav-toggle{
+	width: 40px;
+	height: 66px;
+
+	display: none;
+	align-items: center;
+	float: right;
+	cursor: pointer;
+
+}
+span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	position: relative;
+}
+
+span.m-toggle-icon:before{top: 12px;}
+span.m-toggle-icon:after{top: -14px;}
+
+/*---------------fin du hamburguer--------------*/
+
+
+.bas{	/*reglage footer*/
+	color: white;
+}
+.bas:hover{	/*reglage footer*/
+	text-decoration:underline !important;
+	color: red;
+}
+
+@media only screen and (max-width: 880px){
+	.m-link ul li{/*disparition lien secondaire*/
+		display: none;
+	}
+	.m-link:hover{/*reglage d'un lien principal*/
+		color: black;
+		background-color: white;
+	}
+	.m-right{/*bloc des liens*/
+		position: absolute;
+		top: 66px;right: 0;
+		width: 200px;
+		height: 270%;
+		background: #6d071a;
+		transform: translateX(120%);
+		transition: 0.3s;
+		}
+	.m-link{/*reglage d'un lien principal*/
+		display: block;
+		text-align: center;
+		padding: 0;margin: 0 20px;
+		height: 55px;
+		border-radius: 5px;
+	}
+	.m-nav-toggle{/*apparition hamburger*/
+		display: flex;
+		margin-right: 20px;
+	}
+	.s:hover .m-right{ /*pour faire apparaitre les liens*/		
+		transform: translateX(0);
+		transition: 0.3s;		
+	}	
+
+}

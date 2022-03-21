@@ -1,0 +1,48 @@
+.Corp{	/*reglage corp*/
+	
+	width: 80%;	
+	margin: 0 auto;
+	background-color: #c0c0c0;
+	padding-left: 1%;
+}
+article{/*reglage article*/
+	width: 95%;
+	margin: 0 auto;
+	background-color: white;
+	padding-left: 1%;
+	border: 1px solid gray;
+	border-radius: 15px;
+	margin-top: 30px;	
+	box-shadow: 8px 8px 15px gray;
+	height: 500px;
+	overflow: auto;
+}
+table{
+	width: 95%;
+}
+#v-img{/*reglage image*/
+	width: 99%;
+}
+#a-img{/*reglage image*/
+	width: 80%;	
+}
+#c-img{/*reglage image*/
+	width: 50%;
+}
+#e-img{/*reglage image*/
+	width: 30%;
+}
+#b-img{/*reglage image*/
+	width: 50%;
+}
+#j-img{/*reglage image*/
+	width: 50%;
+}
+#an-img{/*reglage image*/
+	width: 90%;
+}
+video{/*reglage video*/
+	margin-left: 24%;
+	width: 50%;
+}
+

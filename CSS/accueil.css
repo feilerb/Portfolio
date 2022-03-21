@@ -1,0 +1,27 @@
+.Corp{/*reglage corp*/	
+	border: 1px solid blue;
+	width: 80%;	
+	margin: 0 auto;
+	background-color: #c0c0c0;
+	padding-left: 1%;
+}
+.a-link{/*reglage lien*/
+	
+	color: blue;
+}
+.a-link:hover{/*reglage lien*/
+	text-decoration:underline;
+}
+.e-img{/*reglage image*/
+	
+	width: 60%
+}
+.a-img{/*reglage image*/
+	
+	width: 97%;
+}
+.j-img{/*reglage image*/
+	
+	width: 70%;
+}
+

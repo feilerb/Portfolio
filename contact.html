@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>E-portfolio</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/header.css">  
+    <link rel="stylesheet" href="CSS/contact.css">
+
+</head>
+<body>
+    <header role="header">
+        <nav class="menu" role="navigation">
+            <div class="inner">
+                <div class="m-left">
+                    <a href="portfolio.html"><h1 class="logo">AURELIEN DASSE</h1></a>
+                </div>
+            </div>
+            <div class="s">
+            <div class="m-right">
+                <a href="experience.html" class="m-link">Experiences</a>
+                <a href="loisirs.html" class="m-link">Loisirs</a>
+                <a href="competence.html" class="m-link">Compétences</a>
+
+            </div>
+            <div class="m-nav-toggle">
+                    <span class="m-toggle-icon"></span>
+            </div>
+        </div>
+            
+        </nav>
+    </header>
+    <br><br><br><br><br>
+    <section class="Corp">
+        
+        <h2>Informations de contact</h2>
+        <form action="">
+        <fieldset>
+             <legend>Genre</legend>
+            <ul>
+                <li>
+                    <label for="titre 1">
+                        <input type="radio" id="titre 1" name="title">
+                    Monsieur</label>
+                </li>
+                <li>
+                    <label for="titre 2">
+                         <input type="radio" id="titre 2" name="title">
+                    Madame</label>
+                </li>
+                <li>
+                    <label for="titre 3">
+                         <input type="radio" id="titre 3" name="title">
+                    Autres</label>
+                </li>
+            </ul>               
+         </fieldset>
+        <p>
+            <label class="perso" for="name">Nom</label>
+            <input class="perso-input" type="text" id="name" name="username" placeholder="Nom">
+        </p>
+        <p>
+            <label class="perso" for="name2">Prenom</label>
+            <input class="perso-input" type="text" id="name2" name="username2" placeholder="Prénom">
+        </p>
+        <p>
+            <label class="perso" for="Age">Age</label>
+            <input class="perso-input" type="number" min="15" max="125" id="Age" name="userage" placeholder="18">
+         </p>
+        <p>
+            <label class="perso" for="Mail">E-mail</label>
+            <input class="perso-input" type="email" id="Mail" name="userMail" placeholder="exemple@gmail.com">
+        </p> 
+        <p>
+            <label class="perso" for="raison">C'est une raison</label>
+            <select id="definition" class="perso-input">
+                    <option selected="selected>">Amicale</option>
+                    <option>Professionnelle</option>
+                    <option>Autres</option>                    
+                </select>
+        </p> 
+        <p>            
+            <textarea class="message" id="Message" name="message" placeholder="Entrez votre message"></textarea> 
+        </p>      
+        <p>
+            <button type="submit" class="btn btn-outline-success">Envoyer le message</button>
+        </p>
+        </form>
+        <h2>Envoyer un mail</h2>
+        <a href="mailto:aurelien.dasse19@gmail.com?subject=Contact site&body=Bonjour, " class="mail">Appuyer ici si vous preferez envoyer un mail</a>  
+        <br><br>    
+    </section>
+     <br><br>
+</body>
+</html>
